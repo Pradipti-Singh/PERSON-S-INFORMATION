@@ -1,52 +1,21 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include<stdio.h>
+struct address
+{
+char city[20]; 
+int pin;
+char phone[14];
+};
+struct employee
+{
+char name[20]; 
+struct address add;
+};
+void main ()
+{
+struct employee emp;
+printf("Enter employee information?\n 1. NAME\n 2. CITY\n 3. PINCODE \n 4. PHONE");
+scanf("%s %s %d %s",emp.name,emp.add.city, &emp.add.pin, emp.add.phone); 
+printf("Printing the employee information. ..\n");
+printf("name: %s\nCity: %s\nPincode: %d\nPhone: %s",emp.name,emp.add.city,emp.add. 
+pin,emp.add.phone);
+}
